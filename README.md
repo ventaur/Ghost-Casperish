@@ -1,4 +1,15 @@
-# Casper
+# Casperish
+
+A modified version of the default personal blogging theme for Ghost.
+
+We have forked the Casper theme on GitHub and made our changes to that fork. We will follow the [usual protocol to sync our fork with the upstream repo](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork).
+
+## Changes
+
+
+---------------------------------------
+
+# Caster
 
 The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper! If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
 
