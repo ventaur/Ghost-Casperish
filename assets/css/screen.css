@@ -95,7 +95,7 @@ body {
     .home-template .post-feed,
     .tag-template .post-feed,
     .author-template .post-feed {
-        padding: 40px 0 5vw;
+        padding: 40px 0 0;
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
     }
@@ -3029,4 +3029,9 @@ Usage (In Ghost editor):
     .subscribe-form .success .message-success {
         color: color(var(--green) l(+5%) s(-5%));
     }
+}
+
+
+nav.pagination {
+    margin: 1vw 0 3vw;
 }
