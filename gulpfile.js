@@ -106,8 +106,8 @@ try {
     config = null;
 }
 
-const REPO = 'TryGhost/Casper';
-const USER_AGENT = 'Casper';
+const REPO = 'ventaur/Ghost-Casperish';
+const USER_AGENT = 'Casperish';
 const CHANGELOG_PATH = path.join(process.cwd(), '.', 'changelog.md');
 
 const changelog = ({previousVersion}) => {
