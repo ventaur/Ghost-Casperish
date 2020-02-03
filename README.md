@@ -6,6 +6,10 @@ We have forked the Casper theme on GitHub and made our changes to that fork. We 
 
 ## Changes
 
+This is a summary of the changes this theme makes to Casper.
+
+* Remove infinite scroll and replace it with traditional pagination.
+* 
 
 ---------------------------------------
 
