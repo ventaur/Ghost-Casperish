@@ -14,6 +14,9 @@
  */
 
 (function (window, document) {
+    // We're not going to use infinite scroll for our edition of the theme.
+    return;
+
     // next link element
     var nextElement = document.querySelector('link[rel=next]');
     if (!nextElement) {
