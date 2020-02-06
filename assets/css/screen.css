@@ -29,7 +29,7 @@ production stylesheet in assets/built/screen.css
 
 /* 1. Global - Set up the things
 /* ---------------------------------------------------------- */
-@import "global.css";
+/*@import "global.css";*/
 
 body {
     background: #fff;
@@ -95,7 +95,7 @@ body {
     .home-template .post-feed,
     .tag-template .post-feed,
     .author-template .post-feed {
-        padding: 40px 0 0;
+        padding: 40px 0 5vw;
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
     }
@@ -3029,23 +3029,4 @@ Usage (In Ghost editor):
     .subscribe-form .success .message-success {
         color: color(var(--green) l(+5%) s(-5%));
     }
-}
-
-
-/* 8 Casperish
-/* ---------------------------------------------------------- */
-
-nav.pagination {
-    margin: 1vw 0 3vw;
-}
-
-
-.tag-card {
-    flex: unset;
-    min-height: unset;
-}
-
-.tag-card .post-card-byline-content {
-    margin-left: 0;
-    margin-bottom: 0.5em
 }

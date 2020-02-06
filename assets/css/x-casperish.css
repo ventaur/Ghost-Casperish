@@ -1,0 +1,23 @@
+@media (min-width: 900px) {
+    .home-template .post-feed,
+    .tag-template .post-feed,
+    .author-template .post-feed {
+        padding: 40px 0 0;
+    }
+}
+
+
+nav.pagination {
+    margin: 1vw 0 3vw;
+}
+
+
+.tag-card {
+    flex: unset;
+    min-height: unset;
+}
+
+.tag-card .post-card-byline-content {
+    margin-left: 0;
+    margin-bottom: 0.5em
+}
