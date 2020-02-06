@@ -1,0 +1,36 @@
+<article class="post-card tag-card {{#unless feature_image}}no-image{{/unless}}">
+
+    {{#if feature_image}}
+    <a class="post-card-image-link" href="{{url}}">
+        <img class="post-card-image"
+            srcset="{{img_url feature_image size="s"}} 300w,
+                    {{img_url feature_image size="m"}} 600w,
+                    {{img_url feature_image size="l"}} 1000w,
+                    {{img_url feature_image size="xl"}} 2000w"
+            sizes="(max-width: 1000px) 400px, 700px"
+            src="{{img_url feature_image size="m"}}"
+            alt="{{name}}"
+        />
+    </a>
+    {{/if}}
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="{{url}}">
+
+            <header class="post-card-header">
+                <h2 class="post-card-title">{{name}}</h2>
+                <div class="post-card-byline-content">
+                    <span>{{plural count.posts empty="None" singular="% post" plural="% posts"}}</span>
+                </div>
+            </header>
+
+            <section class="post-card-excerpt">
+                {{description}}
+            </section>
+
+        </a>
+
+    </div>
+
+</article>

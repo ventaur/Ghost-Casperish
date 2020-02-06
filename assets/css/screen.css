@@ -3032,6 +3032,20 @@ Usage (In Ghost editor):
 }
 
 
+/* 8 Casperish
+/* ---------------------------------------------------------- */
+
 nav.pagination {
     margin: 1vw 0 3vw;
+}
+
+
+.tag-card {
+    flex: unset;
+    min-height: unset;
+}
+
+.tag-card .post-card-byline-content {
+    margin-left: 0;
+    margin-bottom: 0.5em
 }
