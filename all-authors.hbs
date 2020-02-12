@@ -1,15 +1,15 @@
 {{!< default}}
 {{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
 
-{{#get "tags" limit="all" include="count.posts" order="name asc"}}
+{{#get "authors" limit="all" include="count.posts" order="name asc"}}
 
 <header class="site-archive-header">
     {{> site-header}}
     {{> header-background background=feature_image}} {{!--Special header-image.hbs partial to generate the background image--}}
         <div class="inner site-header-content">
-            <h1 class="site-title">Tags</h1>
+            <h1 class="site-title">Authors</h1>
             <h2 class="site-description">
-                {{plural pagination.total empty='None' singular='% tag' plural='% tags'}}
+                {{plural pagination.total empty='None' singular='% author' plural='% authors'}}
             </h2>
         </div>
     </div>
@@ -19,8 +19,8 @@
 <main id="site-main" class="site-main outer">
     <div class="inner posts">
         <div class="post-feed meta-list">
-            {{#foreach tags}}
-                {{> "tag-card"}}
+            {{#foreach authors}}
+                {{> "author-card"}}
             {{/foreach}}
         </div>
     </div>

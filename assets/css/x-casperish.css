@@ -12,12 +12,25 @@ nav.pagination {
 }
 
 
-.tag-card {
+.meta-list .post-card {
     flex: unset;
     min-height: unset;
 }
-
-.tag-card .post-card-byline-content {
+.meta-list .post-card-title {
+    margin-bottom: 0.3em;
+}
+.meta-list .post-card .post-card-byline-content {
     margin-left: 0;
     margin-bottom: 0.5em
+}
+
+
+.meta-list .post-card.author-card {
+    padding: 0 20px 40px;
+}
+.meta-list .post-card.author-card .author-header {
+    padding-top: 0;
+}
+.meta-list .post-card.author-card .author-header-content {
+    margin-left: 10px;
 }
