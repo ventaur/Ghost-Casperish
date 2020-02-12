@@ -11,6 +11,11 @@ nav.pagination {
     margin: 1vw 0 3vw;
 }
 
+.post-full-tags {
+    display: block;
+    font-size: 1.5rem;
+}
+
 
 .meta-list .post-card {
     flex: unset;
