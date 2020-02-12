@@ -77,6 +77,9 @@
     </div>
     {{/if}}
 
+    {{#is "post"}}<a class="meta-edit" href="/ghost/#/editor/post/{{post.id}}">&nbsp;</a>{{/is}}
+    {{#is "page"}}<a class="meta-edit" href="/ghost/#/editor/page/{{post.id}}">&nbsp;</a>{{/is}}
+
     {{!-- jQuery, required for fitvids --}}
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
