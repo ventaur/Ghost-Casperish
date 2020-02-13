@@ -24,9 +24,40 @@ nav.pagination {
     margin: 1vw 0 3vw;
 }
 
+.post-card-primary-tag svg {
+    height: 1.8rem;
+    fill: #666;
+}
+
 .post-full-tags {
     display: block;
     font-size: 1.5rem;
+}
+
+.tags-tooltip {
+    position: absolute;
+    top: 105%;
+    z-index: 999;
+    display: block;
+    padding: 2px 8px;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 0.2px;
+    background: var(--darkgrey);
+    border-radius: 3px;
+    box-shadow: rgba(39,44,49,0.08) 0 12px 26px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+    opacity: 0;
+    transition: all 0.35s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+    transform: translateY(0px);
+    pointer-events: none;
+    text-transform: none;
+}
+.post-card-primary-tag {
+    position: relative;
+}
+.post-card-primary-tag:hover .tags-tooltip {
+    opacity: 1.0;
+    transform: translateY(6px);
 }
 
 

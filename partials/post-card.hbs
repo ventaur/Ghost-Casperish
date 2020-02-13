@@ -20,15 +20,19 @@
 
         <a class="post-card-content-link" href="{{url}}">
 
-            <header class="post-card-header">
+            <header class="post-card-header">   
                 <div class="post-card-primary-tag">
-                {{#if primary_tag}}
-                    {{#primary_tag}}
-                    {{name}}
-                    {{/primary_tag}}
-                {{else}}
-                    &nbsp;
-                {{/if}}
+                    <div class="tags-tooltip">
+                        {{tags autolink="false"}}
+                    </div>
+                    
+                    {{#if primary_tag}}
+                        {{> "icons/tag"}}
+                        {{#primary_tag}}{{name}}{{/primary_tag}}
+                        {{#has tag="count:>1"}}&hellip;{{/has}}
+                    {{else}}
+                        &nbsp;
+                    {{/if}}
                 </div>
                 <h2 class="post-card-title">{{title}}</h2>
             </header>
@@ -47,7 +51,6 @@
             <ul class="author-list">
                 {{#foreach authors}}
                 <li class="author-list-item">
-            
                     <div class="author-name-tooltip">
                         {{name}}
                     </div>
