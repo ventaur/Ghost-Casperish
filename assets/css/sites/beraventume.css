@@ -8,3 +8,7 @@
 .site-nav-main .site-nav-left-wrapper:after {
     background: linear-gradient(90deg,rgba(190, 190, 190, 0) 0, #bebebe);
 }
+
+.nav li a {
+    text-shadow: black 0 0 10px;
+}
