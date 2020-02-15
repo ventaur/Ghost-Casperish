@@ -50,6 +50,9 @@ function css(done) {
     pump([
         src('assets/css/*.css', {sourcemaps: true}),
         concat('app.css'),
+        
+        src('assets/css/sites/*.css', {sourcemaps: true}),
+        
         postcss(processors),
         dest('assets/built/', {sourcemaps: '.'}),
         livereload()
