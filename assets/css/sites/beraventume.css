@@ -1,3 +1,10 @@
 .site-header-content {
     align-items: flex-end;
 }
+
+.site-nav-main {
+    background-color: #bebebe;
+}
+.site-nav-main .site-nav-left-wrapper:after {
+    background: linear-gradient(90deg,rgba(190, 190, 190, 0) 0, #bebebe);
+}
