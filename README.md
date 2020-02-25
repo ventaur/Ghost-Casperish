@@ -18,6 +18,16 @@ This is a summary of the changes this theme makes to Casper.
 * Add a hidden edit link to pages/posts (upper-left of body).
 * Add site-specific styles for beraventume.
 
+## New Routes
+
+You may choose to include the new routes in a site's `/settings/routes.yaml` file. If so, an example of that section follows.
+
+```json
+routes:
+  /all-tags/: all-tags
+  /all-authors/: all-authors
+```
+
 ---------------------------------------
 
 # Casper
