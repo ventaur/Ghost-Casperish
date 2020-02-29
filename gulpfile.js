@@ -82,7 +82,9 @@ function zipper(done) {
         src([
             '**',
             '!node_modules', '!node_modules/**',
-            '!dist', '!dist/**'
+            '!dist', '!dist/**',
+            '!config.example.json', '!yarn*', '!gulp*',
+            '!assets/css/**', '!assets/js/**'
         ]),
         zip(filename),
         dest(targetDir)
