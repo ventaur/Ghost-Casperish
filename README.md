@@ -28,6 +28,14 @@ routes:
   /all-authors/: all-authors
 ```
 
+## Local Testing
+
+To test this theme locally, create a symlink (directory junction) under `/content/themes/` to this directory.
+
+```
+mklink /J C:\Path\to\Your\Blog\content\themes\casperish C:\Path\to\This\Directory
+```
+
 ---------------------------------------
 
 # Casper
