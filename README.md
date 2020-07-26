@@ -36,6 +36,15 @@ To test this theme locally, create a symlink (directory junction) under `/conten
 mklink /J C:\Path\to\Your\Blog\content\themes\casperish C:\Path\to\This\Directory
 ```
 
+## Production Setup
+
+It's easiest to put the theme in a shared location on the server and symlink to it under any blog's `/content/themes/` directory.
+
+```
+sudo ln -s /var/www/shared/ghost-themes/caseperish ./casperish
+```
+
+
 ---------------------------------------
 
 # Casper
