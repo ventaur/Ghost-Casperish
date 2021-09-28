@@ -16,7 +16,9 @@ This is a summary of the changes this theme makes to Casper.
 * Show every tag when viewing a post, instead of just the primary tag.
 * Add icon and tooltip to display all tags when hovering the primary tag of post listings.
 * Add a hidden edit link to pages/posts (upper-left of body).
-* Add site-specific styles for beraventume.
+* Add site-specific styles for:
+  * Beraventume
+  * Geek Freeq
 
 ## New Routes
 
