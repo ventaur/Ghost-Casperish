@@ -12,6 +12,7 @@ body .meta-edit {
 }
 
 
+/* Add some space between the header and content. */
 @media (min-width: 901px) {
     .home-template .post-feed,
     .tag-template .post-feed,
@@ -21,6 +22,7 @@ body .meta-edit {
 }
 
 
+/* Ensure the pagination nav has some room. */
 nav.pagination {
     margin: 5vw 0 2vw;
 }
@@ -31,6 +33,7 @@ nav.pagination {
     font-size: 1.4rem;
 }
 
+/* Hover a tooltip with all tags on post cards. */
 .tags-tooltip {
     position: absolute;
     top: 105%;
@@ -62,13 +65,14 @@ nav.pagination {
 }
 
 
+/* Reduce the space between header and large post cards in a meta list (our custom pages). */
 @media (min-width: 1001px) {
     .meta-list .post-card-large {
         min-height: 200px;
     }
 }
 
-
+/* Custom styles for our All Tags page */
 .meta-list .post-card.tag-card {
     flex: unset;
     min-height: unset;
@@ -84,7 +88,7 @@ nav.pagination {
     margin-bottom: 0.5em
 }
 
-
+/* Custom styles for our All Authors page */
 .meta-list .post-card.author-card {
     padding: 0 20px 40px;
 }
