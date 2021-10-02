@@ -1,3 +1,4 @@
+/* Hidden link for quick post/page editing. */
 body .meta-edit {
     z-index: 2000;
     display: inline-block;
@@ -29,9 +30,9 @@ nav.pagination {
     fill: #666;
 }
 
-.post-full-tags {
+.article-full-tags {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .tags-tooltip {
