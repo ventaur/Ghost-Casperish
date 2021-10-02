@@ -1,3 +1,4 @@
+/* Right-align site logo and description. */
 .site-header-content {
     align-items: flex-end;
     background-color: #000;
@@ -15,6 +16,7 @@
 }
 
 
+/* Darken the home page cover image. */
 html.dark-mode .home-template .site-header-cover {
     opacity: 0.6;
 }
@@ -23,6 +25,7 @@ html.dark-mode .home-template .site-header-cover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+/* Use dark nav item text for non-homepage templates. */
 body:not(.home-template) .nav li a,
 body:not(.home-template) .nav-post-title {
     color: #000;
