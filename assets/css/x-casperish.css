@@ -61,14 +61,24 @@ nav.pagination {
 }
 
 
-.meta-list .post-card {
+@media (min-width: 1001px) {
+    .meta-list .post-card-large {
+        min-height: 200px;
+    }
+}
+
+
+.meta-list .post-card.tag-card {
     flex: unset;
     min-height: unset;
+}
+.meta-list .post-card.tag-card {
+    padding: 0 20px 40px;
 }
 .meta-list .post-card-title {
     margin-bottom: 0.3em;
 }
-.meta-list .post-card .post-card-byline-content {
+.meta-list .post-card.tag-card .post-card-byline-content {
     margin-left: 0;
     margin-bottom: 0.5em
 }
@@ -78,7 +88,14 @@ nav.pagination {
     padding: 0 20px 40px;
 }
 .meta-list .post-card.author-card .author-header {
+    display: flex;
+    flex-direction: row;
     padding-top: 0;
+}
+.meta-list .post-card.author-card .author-profile-image {
+    flex: 0 0 4em;
+    width: 4em;
+    height: 4em;
 }
 .meta-list .post-card.author-card .author-header-content {
     margin-left: 10px;
