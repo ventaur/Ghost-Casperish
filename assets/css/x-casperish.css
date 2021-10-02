@@ -11,7 +11,7 @@ body .meta-edit {
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 901px) {
     .home-template .post-feed,
     .tag-template .post-feed,
     .author-template .post-feed {
