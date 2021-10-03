@@ -1,3 +1,22 @@
+/* Prevent the accent color from bleeding through on the home page. */
+.site-header-content {
+    background-color: #000;
+}
+
+/* Ensure the site logo is centered. */
+.site-header-content .site-logo {
+    max-height: 100px;
+    margin: 0 auto;
+}
+
+/* Set the site description size appropriately. */
+.site-header-content .site-description {
+    font-size: 2.3rem;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+
 /* Hidden link for quick post/page editing. */
 body .meta-edit {
     z-index: 2000;

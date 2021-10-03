@@ -1,2 +1,2 @@
-.site-header-content{background-color:#000}.site-header-content .site-logo{max-height:100px;margin:0 auto}.site-header-content .site-description{font-size:2.3rem;font-weight:300;line-height:1.4}.home-template .gh-head.has-cover{background-color:rgba(0,0,0,.3)}
+body:not(.home-template) .nav-post-title,body:not(.home-template) .nav li a{color:#000}
 /*# sourceMappingURL=geekfreeq.css.map */
