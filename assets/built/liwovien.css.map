@@ -1,0 +1,1 @@
+{"version":3,"sources":["liwovien.css"],"names":[],"mappings":"AACA,iDACI,UACJ,CAEA,kCACI,+BACJ","file":"liwovien.css","sourcesContent":["/* Darken the home page cover image. */\nhtml.dark-mode .home-template .site-header-cover {\n    opacity: 0.6;\n}\n\n.home-template .gh-head.has-cover {\n    background-color: rgba(0, 0, 0, 0.3);\n}\n"]}
