@@ -65,14 +65,24 @@ nav.pagination {
 }
 
 
+/* Custom styles for our All Tags page */
+.meta-list.post-feed {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 0;
+}
+
+.meta-list .post-card-large {
+    flex-basis: 100%;
+    min-height: 9em;
+}
 /* Reduce the space between header and large post cards in a meta list (our custom pages). */
 @media (min-width: 1001px) {
     .meta-list .post-card-large {
-        min-height: 200px;
+        min-height: 11em;
     }
-}
+}    
 
-/* Custom styles for our All Tags page */
 .meta-list .post-card.tag-card {
     flex: unset;
     min-height: unset;
