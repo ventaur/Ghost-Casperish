@@ -134,3 +134,10 @@ nav.pagination {
 .meta-list .post-card.author-card .author-header-content {
     margin-left: 10px;
 }
+
+
+/* Hide the Membership/Subscribe sections/actions. */
+a[href^="#/portal/signup"],
+.footer-cta {
+    display: none;
+}
