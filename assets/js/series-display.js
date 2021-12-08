@@ -28,7 +28,8 @@ function getPosts(seriesTags) {
             api.posts
                 .browse({
                     filter: postFilter, 
-                    fields: 'title,slug'
+                    fields: 'title,slug',
+                    order: 'published_at asc'
                 })
                 .then(posts => {
                     cachedPosts.set(postFilter, posts);
