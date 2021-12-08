@@ -31,6 +31,7 @@ function getPosts(seriesTags) {
                     fields: 'title,slug'
                 })
                 .then(posts => {
+                    cachedPosts.set(postFilter, posts);
                     resolve(posts);
                 })
                 .catch(err => {
@@ -44,7 +45,7 @@ function getPosts(seriesTags) {
 
 function displaySeriesInfo(seriesTags, options) {
     const posts = getPosts(seriesTags);
-    
+
     // TODO: Display one ToC per series tag of the other posts in that series (with the same tag).
 
 }
