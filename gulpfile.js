@@ -84,6 +84,8 @@ function zipper(done) {
             '**',
             '!node_modules', '!node_modules/**',
             '!dist', '!dist/**',
+            '!assets/css', '!assets/css/**',
+            '!assets/js', '!assets/js/**',
             '!yarn-error.log',
             '!yarn.lock',
             '!gulpfile.js'
