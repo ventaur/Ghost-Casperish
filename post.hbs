@@ -120,3 +120,36 @@ into the {body} tag of the default.hbs template --}}
 </aside>
 
 {{/post}}
+
+
+{{#contentFor "pageScripts"}}
+<script src="https://unpkg.com/@tryghost/content-api@1.6.0/umd/content-api.min.js"></script>
+<script>
+    // Series Display
+    (function(opts) {
+        var api = new GhostContentAPI({ url: opts.apiUrl, key: opts.apiKey, version: 'v4' });
+        
+        function loadSeriesDisplay(document, src, api) {
+            return new Promise((resolve, reject) => {
+                var script = document.createElement('script');
+                script.onload = () => resolve(new GhostSeriesDisplay.SeriesDisplay(api));
+                script.onerror = reject;
+                script.async = true;
+                script.src = src;
+                document.head.append(script);
+            });
+        }
+        
+        loadSeriesDisplay(opts.document, opts.src, api)
+            .then((seriesDisplay) => {
+                // Minimum needed to display series info.
+                seriesDisplay.displaySeriesInfo(document);
+            });
+    })({
+        document: window.document, 
+        src:      '{{asset "built/ghost-series-display.min.js"}}', 
+        apiKey:   GhostSeriesDisplayApiKey, 
+        apiUrl:   `${window.location.protocol}//${window.location.host}`
+    });
+</script>
+{{/contentFor}}

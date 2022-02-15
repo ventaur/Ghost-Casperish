@@ -69,9 +69,13 @@ function js(done) {
             'assets/js/lib/*.js',
             'assets/js/*.js'
         ], {sourcemaps: true}),
-        concat('casper.js'),
         uglify(),
+        concat('casper.js'),
         dest('assets/built/', {sourcemaps: '.'}),
+        
+        src('node_modules/ghost-series-display/dist/umd/ghost-series-display.min.js'),
+        dest('assets/built/', {sourcemaps: '.'}),
+        
         livereload()
     ], handleError(done));
 }
