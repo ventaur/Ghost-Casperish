@@ -19,6 +19,15 @@ This is a summary of the changes this theme makes to Casper.
 * Add site-specific styles for:
   * Beraventume
   * Geek Freeq
+* Add Ghost Series Display to posts. Requires `GhostSeriesDisplayApiKey` added in Site Header.
+
+An example script for the `GhostSeriesDisplayApiKey` value needed is below.
+
+```js
+<script>
+	var GhostSeriesDisplayApiKey = '0123456789abcdef0123456789';
+</script>
+```
 
 ## New Routes
 
