@@ -1,7 +1,7 @@
 {
     "name": "casperish",
     "description": "A modified version of the clean, minimal default theme for the Ghost publishing platform",
-    "version": "4.1.1+2.1",
+    "version": "4.1.1+2.2",
     "engines": {
         "ghost": ">=4.0.0",
         "ghost-api": "v4"
