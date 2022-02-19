@@ -922,12 +922,7 @@
     "color-convert" "^1.9.1"
     "color-string" "^1.5.4"
 
-"colorette@^1.2.1":
-  "integrity" "sha512-puCDz0CzydiSYOrnXpz/PKd69zRrribezjtE9yd4zvytoRc8+RY/KJPvtPFKZS3E3wP6neGyMe0vOTlHO5L3Pw=="
-  "resolved" "https://registry.npmjs.org/colorette/-/colorette-1.2.1.tgz"
-  "version" "1.2.1"
-
-"colorette@^1.2.2":
+"colorette@^1.2.1", "colorette@^1.2.2":
   "integrity" "sha512-MKGMzyfeuutC/ZJ1cba9NqcNpfeqMUcYmyF1ZFY6/Cn7CNSAKx6a+s48sqLqyAiZuaP2TcqMhoo+dlwFnVxT9w=="
   "resolved" "https://registry.npmjs.org/colorette/-/colorette-1.2.2.tgz"
   "version" "1.2.2"
@@ -2014,10 +2009,12 @@
     "prettyjson" "1.2.1"
     "uuid" "8.3.2"
 
-"ghost-series-display@^0.2.0":
-  "integrity" "sha512-ic1P1avtxI9Zqu9KBJARO8nTkPJHPBrsnYuVdG57wH7OWWSzFGExiwvLrhceoE9an53oUdRM8ZWIs9THORH4sA=="
-  "resolved" "https://registry.npmjs.org/ghost-series-display/-/ghost-series-display-0.2.0.tgz"
-  "version" "0.2.0"
+"ghost-series-display@^0.3.0":
+  "integrity" "sha512-gUat+aKwb8NPVMovvwylkNtJeK7yqDEp/4Qtp3WUc74FpV42IdB/HQhs6tn4HaXofPP9Li6J0s02ykmRjkWaow=="
+  "resolved" "https://registry.npmjs.org/ghost-series-display/-/ghost-series-display-0.3.0.tgz"
+  "version" "0.3.0"
+  dependencies:
+    "templater.js" "^3.0.1"
 
 "glob-parent@^3.1.0":
   "integrity" "sha1-nmr2KZ2NO9K9QEMIMr0RPfkGxa4="
@@ -4980,6 +4977,11 @@
     "fs-constants" "^1.0.0"
     "inherits" "^2.0.3"
     "readable-stream" "^3.1.1"
+
+"templater.js@^3.0.1":
+  "integrity" "sha1-yemb3plmF43jBmaye+nIrYoKMjM="
+  "resolved" "https://registry.npmjs.org/templater.js/-/templater.js-3.0.1.tgz"
+  "version" "3.0.1"
 
 "through@^2.3.6":
   "integrity" "sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU="
