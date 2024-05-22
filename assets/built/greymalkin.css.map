@@ -1,1 +1,0 @@
-{"version":3,"sources":["greymalkin.css"],"names":[],"mappings":"AAAA,kCACI,gBACJ,CAEA,0BACI,sBACJ","file":"greymalkin.css","sourcesContent":[".home-template .site-header-cover {\n    filter: blur(3px);\n}\n\n.home-template .site-logo {\n    filter: brightness(1.5);\n}"]}

@@ -1,5 +1,0 @@
-/* Use dark nav item text for non-homepage templates. */
-body:not(.home-template) .nav li a,
-body:not(.home-template) .nav-post-title {
-    color: #000;
-}
