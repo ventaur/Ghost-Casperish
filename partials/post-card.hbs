@@ -44,6 +44,9 @@ which templates loop over to generate a list of posts. --}}
                         {{tags autolink="false"}}
                     </div>
                     
+                    {{#if featured}}
+                        <span class="post-card-featured">{{> "icons/fire"}} Featured</span>
+                    {{/if}}
                     {{#if primary_tag}}
                         <span class="post-card-primary-tag">
                             {{> "icons/tag"}}
@@ -52,9 +55,6 @@ which templates loop over to generate a list of posts. --}}
                         </span>
                     {{else}}
                         &nbsp;
-                    {{/if}}
-                    {{#if featured}}
-                        <span class="post-card-featured">{{> "icons/fire"}} Featured</span>
                     {{/if}}
                 </div>
                 <h2 class="post-card-title">
