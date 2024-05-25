@@ -70,7 +70,7 @@ function js(done) {
         uglify(),
         dest('assets/built/', {sourcemaps: '.'}),
         
-        src('node_modules/ghost-series-display/dist/umd/ghost-series-display.min.js'),
+        src('.yarn/cache/**/ghost-series-display.min.js'),
         dest('assets/built/', {sourcemaps: '.'}),
         
         livereload()
