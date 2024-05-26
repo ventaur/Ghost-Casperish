@@ -32,9 +32,10 @@ html.dark-mode .post-card-content-link {
 
 /* Ensure the pagination nav has some room. */
 nav.pagination {
-    margin: 5vw 0 0;
+    margin-top: 12vmin;
 }
 
+/* Give more room between posts in feed grids. */
 .post-feed {
     gap: 12vmin 4vmin;
 }
