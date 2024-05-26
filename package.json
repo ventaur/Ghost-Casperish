@@ -172,6 +172,10 @@
                 "type": "boolean",
                 "default": true,
                 "group": "post"
+            },
+            "dark_mode_accent_color": {
+                "type": "color",
+                "default": "#ffffff"
             }
         }
     },

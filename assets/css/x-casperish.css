@@ -19,13 +19,17 @@ body .meta-edit {
 }
 
 /* Color misses in parent theme */
-html.dark-mode .post-card-content-link {
-    color: #fff;
+html.dark-mode .gh-content a,
+html.dark-mode .post-card-content-link,
+html.dark-mode .post-card-featured {
+    color: var(--dark-mode-accent-color);
 }
 
 @media (prefers-color-scheme: dark) {
-    html.auto-color .post-card-content-link {
-        color: #fff;
+    html.auto-color .gh-content a,
+    html.auto-color .post-card-content-link,
+    html.auto-color .post-card-featured {
+        color: var(--dark-mode-accent-color);
     }
 }
 
