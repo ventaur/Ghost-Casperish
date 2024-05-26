@@ -104,14 +104,8 @@ nav.pagination {
 
 .meta-list .post-card-large {
     flex-basis: 100%;
-    min-height: 9em;
+    margin-bottom: 2em;
 }
-/* Reduce the space between header and large post cards in a meta list (our custom pages). */
-@media (min-width: 1001px) {
-    .meta-list .post-card-large {
-        min-height: 11em;
-    }
-}    
 
 /* Custom styles for our All Tags page */
 .meta-list .post-card.tag-card {
