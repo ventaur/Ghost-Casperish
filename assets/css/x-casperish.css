@@ -47,28 +47,28 @@ nav.pagination {
 /* Hover a tooltip with all tags on post cards. */
 .tags-tooltip {
     position: absolute;
-    top: 105%;
+    top: 50%;
     z-index: 999;
     display: block;
-    padding: 2px 8px;
+    padding: 0.25em 0.75em;
     color: white;
-    font-size: 1.2rem;
-    letter-spacing: 0.2px;
+    font-size: 1em;
+    font-weight: normal;
     background: var(--color-midgrey);
-    border-radius: 3px;
-    box-shadow: rgba(113, 116, 119, 0.08) 0 12px 26px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+    border-radius: 0.3em;
     opacity: 0;
     transition: all 0.35s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-    transform: translateY(0px);
+    transform: translateY(0);
     pointer-events: none;
     text-transform: none;
 }
 .post-card-tags:hover .tags-tooltip {
     opacity: 1.0;
-    transform: translateY(6px);
+    transform: translateY(50%);
 }
 
 .post-card-tags {
+    position: relative;
     gap: 0.5em;
 }
 .post-card-tags .post-card-tags {
