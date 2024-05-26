@@ -48,7 +48,7 @@ which templates loop over to generate a list of posts. --}}
                         <span class="post-card-featured">{{> "icons/fire"}} Featured</span>
                     {{/if}}
                     {{#if primary_tag}}
-                        <span class="post-card-primary-tag">
+                        <span class="post-card-tags">
                             {{> "icons/tag"}}
                             {{#primary_tag}}{{name}}{{/primary_tag}}
                             {{#has tag="count:>1"}}&hellip;{{/has}}

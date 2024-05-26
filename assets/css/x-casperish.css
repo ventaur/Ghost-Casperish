@@ -57,9 +57,11 @@ nav.pagination {
     margin: 5vw 0 2vw;
 }
 
+.post-feed {
+    gap: 12vmin 4vmin;
+}
 
 .article-full-tags {
-    display: block;
     font-size: 1.4rem;
 }
 
@@ -82,16 +84,30 @@ nav.pagination {
     pointer-events: none;
     text-transform: none;
 }
-.post-card-primary-tag {
-    position: relative;
+
+.post-card-tags {
+    gap: 0.5em;
 }
-.post-card-primary-tag svg {
-    height: 1.8rem;
-    fill: #666;
+.post-card-tags .post-card-tags {
+    margin: 0;
 }
-.post-card-primary-tag:hover .tags-tooltip {
+
+.post-card-tags .tags:hover .tags-tooltip {
     opacity: 1.0;
     transform: translateY(6px);
+}
+
+html.dark-mode .icon-tag {
+    fill: color-mod(var(--color-secondary-text) l(-22%));
+}
+@media (prefers-color-scheme: dark) {
+    html.auto-color .icon-tag {
+        fill: color-mod(var(--color-secondary-text) l(-22%));
+    }
+}
+
+.post-card-featured {
+    margin-right: 0.5em;
 }
 
 
@@ -99,7 +115,7 @@ nav.pagination {
 .meta-list.post-feed {
     display: flex;
     flex-wrap: wrap;
-    grid-gap: 0;
+    gap: 1em 2em;
 }
 
 .meta-list .post-card-large {
@@ -112,9 +128,6 @@ nav.pagination {
     flex: unset;
     min-height: unset;
 }
-.meta-list .post-card.tag-card {
-    padding: 0 20px 40px;
-}
 .meta-list .post-card-title {
     margin-bottom: 0.3em;
 }
@@ -124,9 +137,6 @@ nav.pagination {
 }
 
 /* Custom styles for our All Authors page */
-.meta-list .post-card.author-card {
-    padding: 0 20px 40px;
-}
 .meta-list .post-card.author-card .author-header {
     display: flex;
     flex-direction: row;
