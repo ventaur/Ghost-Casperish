@@ -138,41 +138,13 @@ a[href^="#/portal/signup"],
 }
 
 
-.gh-content table {
-    border-spacing: 0;
-    border-collapse: collapse;
-    font-family: var(--font-serif);
-    font-size: 2.1rem;
-    font-weight: 400;
-    line-height: 1.6;
-    margin: 1.5rem 0 1rem;
-    width: auto;
-    max-width: 100%;
-    vertical-align: top;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+/* Tables fill out entire width */
+.gh-content table:not(.gist table) {
+    display: table;
 }
 
-.gh-content table th {
-    background-color: color-mod(var(--color-wash) l(+4%));
-    color: var(--color-darkgrey);
-    font-family: var(--font-sans-serif);
-    font-weight: 700;
-    text-align: left;
-}
-
-.gh-content table th,
-.gh-content table td {
-    border: color-mod(var(--color-wash) l(-1%) s(-5%)) 1px solid;
-    padding: 0.2em 0.5em;
-}
-
-html.dark-mode .gh-content table th {
-    background-color: color-mod(var(--color-darkmode) l(+8%));
-    color: rgba(255, 255, 255, 0.85);
-}
-
-html.dark-mode .gh-content table th,
-html.dark-mode .gh-content table td {
-    border: color-mod(var(--color-darkmode) l(+8%)) 1px solid;
+/* No small, uppercase table headers */
+.gh-content table:not(.gist table) th {
+    font-size: inherit;
+    text-transform: none;
 }
