@@ -63,17 +63,16 @@ nav.pagination {
     pointer-events: none;
     text-transform: none;
 }
+.post-card-tags:hover .tags-tooltip {
+    opacity: 1.0;
+    transform: translateY(6px);
+}
 
 .post-card-tags {
     gap: 0.5em;
 }
 .post-card-tags .post-card-tags {
     margin: 0;
-}
-
-.post-card-tags .tags:hover .tags-tooltip {
-    opacity: 1.0;
-    transform: translateY(6px);
 }
 
 html.dark-mode .icon-tag {
