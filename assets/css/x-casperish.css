@@ -1,19 +1,7 @@
-/* Prevent the accent color from bleeding through on the home page. */
-.site-header-content {
-    background-color: #000;
-}
-
 /* Ensure the site logo is centered. */
 .site-header-content .site-logo {
     max-height: 100px;
     margin: 0 auto;
-}
-
-/* Set the site description size appropriately. */
-.site-header-content .site-description {
-    font-size: 2.3rem;
-    font-weight: 300;
-    line-height: 1.4;
 }
 
 
@@ -26,7 +14,7 @@ body .meta-edit {
     left: 0;
     top: 0;
     width: 1em;
-    line-height: 1.2;
+    line-height: 1;
     text-decoration: none;
 }
 
@@ -42,19 +30,9 @@ html.dark-mode .post-card-content-link {
 }
 
 
-/* Add some space between the header and content. */
-@media (min-width: 901px) {
-    .home-template .post-feed,
-    .tag-template .post-feed,
-    .author-template .post-feed {
-        padding: 40px 0 0;
-    }
-}
-
-
 /* Ensure the pagination nav has some room. */
 nav.pagination {
-    margin: 5vw 0 2vw;
+    margin: 5vw 0 0;
 }
 
 .post-feed {
