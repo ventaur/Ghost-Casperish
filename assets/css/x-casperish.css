@@ -1,3 +1,8 @@
+:root {
+    color-scheme: light dark;
+}
+
+
 /* Ensure the site logo is centered. */
 .site-header-content .site-logo {
     max-height: 100px;
