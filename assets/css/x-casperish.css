@@ -30,6 +30,17 @@ body .meta-edit {
     text-decoration: none;
 }
 
+/* Color misses in parent theme */
+html.dark-mode .post-card-content-link {
+    color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+    html.auto-color .post-card-content-link {
+        color: #fff;
+    }
+}
+
 
 /* Add some space between the header and content. */
 @media (min-width: 901px) {
@@ -84,7 +95,7 @@ nav.pagination {
 }
 
 
-/* Custom styles for our All Tags page */
+/* Custom styles for all of our taxonomy listing pages */
 .meta-list.post-feed {
     display: flex;
     flex-wrap: wrap;
@@ -102,6 +113,7 @@ nav.pagination {
     }
 }    
 
+/* Custom styles for our All Tags page */
 .meta-list .post-card.tag-card {
     flex: unset;
     min-height: unset;
@@ -126,7 +138,7 @@ nav.pagination {
     flex-direction: row;
     padding-top: 0;
 }
-.meta-list .post-card.author-card .author-profile-image {
+.meta-list .post-card.author-card .author-profile-pic {
     flex: 0 0 4em;
     width: 4em;
     height: 4em;
