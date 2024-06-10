@@ -3,13 +3,6 @@
 }
 
 
-/* Ensure the site logo is centered. */
-.site-header-content .site-logo {
-    max-height: 100px;
-    margin: 0 auto;
-}
-
-
 /* Hidden link for quick post/page editing. */
 body .meta-edit {
     z-index: 2000;
