@@ -35,7 +35,6 @@ You may choose to include the new routes in a site's `/settings/routes.yaml` fil
 
 ```json
 routes:
-  /all-tags/: all-tags
   /all-authors/: all-authors
 ```
 
