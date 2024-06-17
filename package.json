@@ -176,6 +176,11 @@
             "dark_mode_accent_color": {
                 "type": "color",
                 "default": "#ffffff"
+            },
+            "tease_inaccessible_content": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
             }
         }
     },
