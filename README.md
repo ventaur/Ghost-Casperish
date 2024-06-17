@@ -8,16 +8,16 @@ We have forked the Casper theme on GitHub and made our changes to that fork. We 
 
 This is a summary of the changes this theme makes to Casper.
 
-* Remove infinite scroll and replace it with traditional pagination.
+* Indicate that we don't want infinite scroll.
+* Add icon and tooltip to display all tags when hovering the primary tag of post listings.
+* Show every tag when viewing a post, instead of just the primary tag.
+* Add a hidden edit link to pages/posts (upper-left of body).
+* Add an "all authors" template to dispaly every author.
+* Add a dark mode accent color to the theme config and use it throughout the styling.
 * Ensure post "cards" now consume some space for the primary tag, even if no tags exist.
 * Add ellipsis to post excerpts.
-* Add an "all authors" template to dispaly every author.
-* Show every tag when viewing a post, instead of just the primary tag.
-* Add icon and tooltip to display all tags when hovering the primary tag of post listings.
-* Add a hidden edit link to pages/posts (upper-left of body).
-* Add site-specific styles for:
-  * Beraventume
-  * Geek Freeq
+* Hide the Membership/Subscribe sections/actions.
+* Make minor adjustments to tables (full width, standard casing in headers).
 * Add Ghost Series Display to posts. Requires `GhostSeriesDisplayApiKey` added in Site Header.
 
 An example script for the `GhostSeriesDisplayApiKey` value needed is below.
