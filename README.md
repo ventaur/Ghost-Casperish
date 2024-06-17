@@ -11,7 +11,6 @@ This is a summary of the changes this theme makes to Casper.
 * Remove infinite scroll and replace it with traditional pagination.
 * Ensure post "cards" now consume some space for the primary tag, even if no tags exist.
 * Add ellipsis to post excerpts.
-* Add an "all tags" template to display every tag.
 * Add an "all authors" template to dispaly every author.
 * Show every tag when viewing a post, instead of just the primary tag.
 * Add icon and tooltip to display all tags when hovering the primary tag of post listings.
