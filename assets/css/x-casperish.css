@@ -1,5 +1,6 @@
 :root {
     color-scheme: light dark;
+    --header-padding: 10vmin;
 }
 
 
@@ -15,6 +16,17 @@ body .meta-edit {
     line-height: 1;
     text-decoration: none;
 }
+
+.site-header-content {
+
+    padding-bottom: var(--header-padding);
+    padding-top: calc(var(--header-padding) + 44px);
+}
+
+.has-cover .site-header-content {
+    min-height: auto;
+}
+
 
 /* Color misses in parent theme */
 html.dark-mode .gh-content a,
