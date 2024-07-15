@@ -1,0 +1,10 @@
+{{#if posts}}
+    <aside class="read-more-wrap outer">
+        <div class="read-more inner">
+            {{#foreach posts}}
+                {{!-- The tag below includes the markup for each post - partials/accessible-post-card.hbs --}}
+                {{> "accessible-post-card"}}
+            {{/foreach}}
+        </div>
+    </aside>
+{{/if}}

@@ -123,19 +123,23 @@ into the {body} tag of the default.hbs template --}}
 
     This query gets the latest 3 posts on the site, but adds a filter to
     exclude the post we're currently on from being included. --}}
-    {{#get "posts" filter="id:-{{id}}" limit="3" as |more_posts|}}
-
-        {{#if more_posts}}
-            <aside class="read-more-wrap outer">
-                <div class="read-more inner">
-                    {{#foreach more_posts}}
-                        {{> "post-card"}}
-                    {{/foreach}}
-                </div>
-            </aside>
-        {{/if}}
-
-    {{/get}}
+    {{#if @custom.tease_inaccessible_content}}
+        {{#get "posts" filter="id:-{{id}}" include="tags" limit="3"}}
+            {{> "read-more"}}
+        {{/get}}
+    {{else if @member.paid}}
+        {{#get "posts" filter="id:-{{id}}+visibility:[paid, members, public]" include="tags" limit="3"}}
+            {{> "read-more"}}
+        {{/get}}
+    {{else if @member}}
+        {{#get "posts" filter="id:-{{id}}+visibility:[members, public]" include="tags" limit="3"}}
+            {{> "read-more"}}
+        {{/get}}
+    {{else}}
+        {{#get "posts" filter="id:-{{id}}+visibility:public" include="tags" limit="3"}}
+            {{> "read-more"}}
+        {{/get}}
+    {{/if}}
 {{/if}}
 
 {{/post}}
