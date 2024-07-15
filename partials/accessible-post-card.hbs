@@ -1,0 +1,7 @@
+{{#if @custom.tease_inaccessible_content}}
+    {{> "post-card"}}
+{{else}}
+    {{#if access}}
+        {{> "post-card"}}
+    {{/if}}
+{{/if}}
