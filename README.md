@@ -24,7 +24,7 @@ An example script for the `GhostSeriesDisplayApiKey` value needed is below.
 
 ```js
 <script>
-	var GhostSeriesDisplayApiKey = '0123456789abcdef0123456789';
+    var GhostSeriesDisplayApiKey = '0123456789abcdef0123456789';
 </script>
 ```
 
@@ -32,9 +32,9 @@ An example script for the `GhostSeriesDisplayApiKey` value needed is below.
 
 You may choose to include the new routes in a site's `/settings/routes.yaml` file. If so, an example of that section follows.
 
-```json
+```yaml
 routes:
-  /all-authors/: all-authors
+    /all-authors/: all-authors
 ```
 
 ## Local Testing
