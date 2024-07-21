@@ -39,9 +39,10 @@ routes:
 
 ## Local Testing
 
-To test this theme locally, create a symlink (directory junction) under `/content/themes/` to this directory.
+To test this theme locally, create a symlink (or directory junction for Windows) under `/content/themes/` to this directory.
 
 ```
+sudo ln -s /path/to/your/blog/content/themes/casperish /path/to/this/directory
 mklink /J C:\Path\to\Your\Blog\content\themes\casperish C:\Path\to\This\Directory
 ```
 
@@ -50,7 +51,7 @@ mklink /J C:\Path\to\Your\Blog\content\themes\casperish C:\Path\to\This\Director
 It's easiest to put the theme in a shared location on the server and symlink to it under any blog's `/content/themes/` directory.
 
 ```
-sudo ln -s /var/www/shared/ghost-themes/caseperish ./casperish
+sudo ln -s /var/www/shared/ghost-themes/casperish ./casperish
 ```
 
 
