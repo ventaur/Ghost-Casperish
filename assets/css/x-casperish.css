@@ -18,13 +18,31 @@ body .meta-edit {
 }
 
 .site-header-content {
-
     padding-bottom: var(--header-padding);
     padding-top: calc(var(--header-padding) + 44px);
 }
 
 .has-cover .site-header-content {
     min-height: auto;
+}
+
+.site-logo {
+    max-height: inherit;
+}
+
+.site-description {
+    font-size: 1.8rem;
+    float: right;
+}
+
+@media (max-width: 767px) {
+    .site-logo {
+        max-height: 120px;
+    }
+    
+    .site-description {
+        font-size: 1.4rem !important;
+    }
 }
 
 
