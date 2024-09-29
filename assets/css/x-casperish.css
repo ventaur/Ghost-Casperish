@@ -27,21 +27,31 @@ body .meta-edit {
 }
 
 .site-logo {
-    max-height: inherit;
+    max-height: 136px;
 }
 
-.site-description {
+.has-cover :is(.site-logo, .site-title) + .site-description {
     font-size: 1.8rem;
+}
+.site-logo + .site-description {
+    margin-top: 20px;
     float: right;
+}
+:is(.site-logo, .site-title) + .site-description {
+    font-size: 1.8rem;
+    margin-top: 4px;
 }
 
 @media (max-width: 767px) {
     .site-logo {
         max-height: 120px;
     }
-    
+
     .site-description {
-        font-size: 1.4rem !important;
+        font-size: 1.6rem !important;
+    }
+    .site-logo + .site-description, .site-title + .site-description {
+        margin-top: 4px !important;
     }
 }
 
