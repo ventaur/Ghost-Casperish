@@ -42,14 +42,33 @@
         </section>
         {{/tag}}
 
-        {{#foreach posts}}
-            {{!-- The tag below includes the markup for each post - partials/accessible-post-card.hbs --}}
-            {{> "accessible-post-card"}}
-        {{/foreach}}
-
-    </div>
-
-    {{pagination}}
+        {{#if @custom.tease_inaccessible_content}}
+            {{#get "posts" filter="tags:{{tag.slug}}" page=pagination.page limit=@config.posts_per_page include="tags"}}
+                {{> "post-loop"}}
+                </div>
+                {{pagination}}
+            {{/get}}
+        {{else if @member.paid}}
+            {{#get "posts" filter="tags:{{tag.slug}}+visibility:[paid, members, public]" page=pagination.page limit=@config.posts_per_page include="tags"}}
+                {{> "post-loop"}}
+                </div>
+                {{pagination}}
+            {{/get}}
+        {{else if @member}}
+            {{#get "posts" filter="tags:{{tag.slug}}+visibility:[members, public]" page=pagination.page limit=@config.posts_per_page include="tags"}}
+                {{> "post-loop"}}
+                </div>
+                {{pagination}}
+            {{/get}}
+        {{else}}
+            {{#get "posts" filter="tags:{{tag.slug}}+visibility:public" page=pagination.page limit=@config.posts_per_page include="tags"}}
+                {{> "post-loop"}}
+                </div>
+                {{pagination}}
+            {{/get}}
+        {{/if}}
+    
+    {{!-- The closing div is inside each get helper because pagination must also be for the proper context. --}}
     
 </div>
 </main>
