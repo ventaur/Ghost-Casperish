@@ -3,19 +3,19 @@
 into the {body} of the default.hbs template --}}
 
 {{#if @custom.tease_inaccessible_content}}
-    {{#get "posts" limit=@config.posts_per_page include="tags"}}
+    {{#get "posts" page=pagination.page limit=@config.posts_per_page include="tags"}}
         {{> "listing"}}
     {{/get}}
 {{else if @member.paid}}
-    {{#get "posts" limit=@config.posts_per_page filter="visibility:[paid, members, public]" include="tags"}}
+    {{#get "posts" filter="visibility:[paid, members, public]" page=pagination.page limit=@config.posts_per_page include="tags"}}
         {{> "listing"}}
     {{/get}}
 {{else if @member}}
-    {{#get "posts" limit=@config.posts_per_page filter="visibility:[members, public]" include="tags"}}
+    {{#get "posts" filter="visibility:[members, public]" page=pagination.page limit=@config.posts_per_page include="tags"}}
         {{> "listing"}}
     {{/get}}
 {{else}}
-    {{#get "posts" limit=@config.posts_per_page filter="visibility:public" include="tags"}}
+    {{#get "posts" filter="visibility:public" page=pagination.page limit=@config.posts_per_page include="tags"}}
         {{> "listing"}}
     {{/get}}
 {{/if}}
